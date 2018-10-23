@@ -16,3 +16,6 @@ def tarea(request):
 
 def inputs(request):
 	return render(request, 'app_de_IN3501/inputs.html')
+
+def formulario_dudas(request):
+	return render(request, 'app_de_IN3501/formulario_dudas.html')
