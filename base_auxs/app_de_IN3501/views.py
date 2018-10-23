@@ -10,7 +10,7 @@ def index(request):
 def welcome(request):
     return render(request, 'app_de_IN3501/bienvenida.html')
 
-
+	
 def tarea(request):
     return render(request, 'app_de_IN3501/tarea.html')
 
