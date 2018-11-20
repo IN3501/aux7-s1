@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Usuarios
 
 # Create your views here.
 def index(request):
@@ -19,3 +20,9 @@ def inputs(request):
 
 def formulario_dudas(request):
 	return render(request, 'app_de_IN3501/formulario_dudas.html')
+
+def lista_usarios(request):
+	contexto = {}
+	contexto['usuarios'] = Usuarios.objects.all()
+	return render(request, 'app_de_IN3501/lista_usuarios.html', contexto)
+
