@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <style>
+        .celeste{background-color:lightblue;}
+    </style>
+  <title>Welcome</title>
+</head>
+<body>
+    <div id="descripcion" class="container">
+        {% include 'app_de_IN3501/menu.html' %}
+        <h1>¡Bienvenidos! A Todos</h1>
+        <div class="row celeste">
+            <div class="col">
+            <p>En la actualidad, las organizaciones representan sistemas complejos, compuestos por diferentes entidades,
+          las cuales necesitan interrelacionarse para ser orientadas hacia un objetivo en común.
+          Esta interrelación se traduce en un proceso de negocio, fundamental para que aquellos objetivos se cumplan.
+          Una de las componentes habilitadoras de estos procesos son las Tecnologías de la Información y Comunicaciones (TICs),
+          las cuales permiten entregar diversos beneficios a la organización, pudiendo incluso representar una ventaja competitiva importante.
+          Por este y otros motivos, las TICs son ampliamente utilizadas y deben ser consideradas al momento de ejercer gestión sobre una organización.</p>
+            </div>
+            <div class="col">
+                <p> En este contexto, el curso IN3501, Tecnologías de Información y Comunicaciones para la Gestión,
+              tiene como propósito que el estudiante diseñe soluciones a problemas de tecnologías de información y comunicación en diversas organizaciones,
+              aportando lineamientos de mejora respecto de los sistemas de información de las organizaciones.</p>
+            </div>
+        </div>
+        <div class="row">
+            <p>La estrategia metodológica a utilizar es activo – participativa; permite que el estudiante trabaje en clases mediante resolución de problemas cercanos,
+          en forma individual y colectiva, a modo de fomentar el trabajo en equipo, gestionando su autoaprendizaje,
+          por medio de diversas actividades como resolución de ejercicios, método de proyecto, presentaciones orales, entre otras.
+          El docente acompaña el proceso, resolviendo dudas, corrigiendo, proponiendo perspectivas de trabajo.</p>
+        </div>
+        <div class="row celeste">
+            <p>Se debe señalar, también, que este curso será teórico-práctico. Se basará en cátedras y auxiliares;
+          ambas clases entregarán las herramientas necesarias para que el estudiante desarrolle las actividades del curso con éxito.
+          El material utilizado durante las clases expositivas del curso, será puesto a disposición de los estudiantes de forma oportuna.</p>
+        </div>
+    </div>
+</body>
+</html>
